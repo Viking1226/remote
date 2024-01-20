@@ -13,3 +13,24 @@
 情况1：文件只在工作区操作，未add。撤销操作：git restore <file>。结果：工作区文件回退。
 情况2：文件已add，未commit。撤销操作：git restore --staged <file>。结果：暂存区文件回退，工作区文件未回退，如需继续回退，操按情况1操作。
 情况3：文件已add，已commit。撤销操作：git reset --hard commit_id。结果：工作区文件、暂存区文件、本地仓库都回退
+---------------------------------------------------------------------------------------------------------------------------------
+af6d42d (HEAD -> master) HEAD@{0}: reset: moving to HEAD^
+e476658 HEAD@{1}: commit: remove szcsj
+af6d42d (HEAD -> master) HEAD@{2}: commit: add 撤销操作
+7446f90 HEAD@{3}: commit: add 零售业...
+70c7e43 HEAD@{4}: commit: add 过去40余年...
+cc7c82c HEAD@{5}: commit: add mydiary
+9777553 HEAD@{6}: commit: del mydiary
+fe3b6a7 HEAD@{7}: reset: moving to HEAD^
+6748030 HEAD@{8}: commit: del《挂载》
+fe3b6a7 HEAD@{9}: reset: moving to fe3b
+b1fb928 HEAD@{10}: commit: del 59
+e4674cc HEAD@{11}: commit: add 59
+fe3b6a7 HEAD@{12}: commit: add mydiary.txt
+2d32e79 HEAD@{13}: reset: moving to 2d32e
+a14a32a HEAD@{14}: reset: moving to HEAD^
+2d32e79 HEAD@{15}: commit: add 28
+a14a32a HEAD@{16}: commit: add
+59a40e9 HEAD@{17}: commit (initial): szcsj
+
+以上日志的含义是，HEAD@0 是由【HEAD@{1}状态（即日志中第二个状态）git reset --hard HEAD^得到的】
