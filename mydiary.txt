@@ -34,3 +34,7 @@ a14a32a HEAD@{16}: commit: add
 59a40e9 HEAD@{17}: commit (initial): szcsj
 
 以上日志的含义是，HEAD@0 是由【HEAD@{1}状态（即日志中第二个状态）git reset --hard HEAD^得到的】
+
+git log
+git show commitid
+git show commitid filename
